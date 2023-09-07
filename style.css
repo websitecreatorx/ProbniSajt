@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+.ikona{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ikona a{
+    text-decoration: none;
+    color: white;
+}
+
+.ikona h2 p{
+    font-size: 2rem;
+    display: inline;
+    color: orange;
+    cursor: pointer;
+}
+
+@media (max-width: 992px){
+    .header .row{
+        padding-top: 50px;
+    }
+}
+
+@media (min-width: 992px){
+    .header .row{
+        --bs-gutter-x: -4.5rem;
+    }
+}
+
+
+@media (max-width: 992px){
+    .menu{
+        display: none !important;
+    }
+}
+
+@media (max-width: 767px){
+    .header .row{
+        gap: 20px;
+    }
+}
+
+@media (max-width: 424px){
+    .start{
+        width: 300px;
+    }    
+}
+
+@media (max-width: 358px){
+    .start{
+        width: 250px !important;
+    }    
+}
+
+
+
+@media (min-width: 425px){
+    .podnaslov{
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 358px){
+    .start{
+        width: auto;
+    }
+}
+
+.ikona h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+.header .row{
+    justify-content: center;
+    align-items: center;
+    color: white;
+    scale: 120%;
+}
+
+.pozadina .container{
+    max-width: 1800px;
+}
+
+.menu{
+    padding-block: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 25px;
+    font-weight: 600;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.menu p{
+    margin: 0;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+.menu .boja{
+    color: orange;
+}
+
+.row button {
+    color: white;
+    background-color: black;
+    border: 2px solid orange;
+    padding: 7px 24px 8px 24px;
+    border-radius: 5px;
+}
+
+.dugme{
+    text-align: center;
+}
+
+.pozadina{
+    background-image: url(Slike/hero-bg.jpg);
+    background-size: cover;
+    background-color: rgb(97, 97, 97);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+.start{
+    flex-direction: column;
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+    color: white;
+    padding-bottom: 120px;
+    padding-top: 120px;
+}
+
+.start h1{
+    font-weight: 800;
+    font-family: sans-serif;
+    user-select: none;
+    scale: 130%;
+    flex-wrap: wrap;
+}
+
+.start h1 p{
+    font-size: 2rem;
+    display: inline-block;
+    color: orange;
+    cursor: pointer;
+    line-height: 4.1rem;
+    height: 8px;
+    width: 8px;
+    background-color: orange;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.podnaslov{
+    padding-top: 20px;
+    user-select: none;
+    font-size: 22px;
+    font-family: serif;
+}
+
+.box{
+    display: flex;
+    border: 0.0084px solid gray;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    min-width: 190px;
+    flex-wrap: wrap;
+    max-width: 200px;
+}
+
+.inline{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding-top: 40px;
+    padding-bottom: 200px;
+}
+
+@media (max-width: 992px){
+    .box{
+        min-width: 320px;
+    }
+}
+
+@media (max-width: 1200px){
+    .box{
+        min-width: 200px;
+    }
+}
+
+.ikonice{
+    padding-top: 40px;
+    display: table-cell;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.ikonice p{
+    padding-top: 10px;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+
+.spacing1{
+    word-spacing: 30px;
+}
+
+.spacing2{
+    word-spacing: 50px;
+}
+
+.ikonice:hover{
+    animation: boja 1s;
+}
+
+@keyframes boja{
+   0%{border-color: gray;}
+   50%{border-color: orange;}
+   100%{border-color: gray;}
+}
