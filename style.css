@@ -8,6 +8,13 @@
     flex-direction: column;
 }
 
+.header{
+    position: fixed;
+    max-width: 1903px;
+    width: 100%;
+    z-index: 1;
+}
+
 .ikona{
     box-sizing: border-box;
     display: flex;
@@ -29,7 +36,7 @@
 
 @media (max-width: 992px){
     .header .row{
-        padding-top: 50px;
+        padding-top: 45px;
     }
 }
 
@@ -78,6 +85,12 @@
     }
 }
 
+@media (min-width: 993px){
+    .header .mnu{
+        padding-top: 15px;
+    }
+}
+
 .ikona h2{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 0;
@@ -92,12 +105,19 @@
     scale: 120%;
 }
 
+@media (max-width: 993px){
+    .header .row{
+        padding-bottom: 30px;
+    }
+}
+
 .pozadina .container{
     max-width: 1800px;
 }
 
 .menu{
     padding-block: 50px;
+    padding-bottom: 40px;
     display: inline-flex;
     align-items: center;
     gap: 25px;
@@ -144,7 +164,7 @@
     margin: auto;
     color: white;
     padding-bottom: 120px;
-    padding-top: 120px;
+    padding-top: 240px;
 }
 
 .start h1{
@@ -177,13 +197,14 @@
 
 .box{
     display: flex;
-    border: 0.0084px solid gray;
+    border: 2px solid gray;
     justify-content: center;
     align-items: center;
     height: 150px;
     min-width: 190px;
     flex-wrap: wrap;
     max-width: 200px;
+    transition: border-color 1s;
 }
 
 .inline{
@@ -193,7 +214,7 @@
     flex-wrap: wrap;
     gap: 60px;
     padding-top: 40px;
-    padding-bottom: 200px;
+    padding-bottom: 204px;
 }
 
 @media (max-width: 992px){
@@ -232,11 +253,9 @@
 }
 
 .ikonice:hover{
-    animation: boja 1s;
+    border-color: orange;
 }
 
-@keyframes boja{
-   0%{border-color: gray;}
-   50%{border-color: orange;}
-   100%{border-color: gray;}
+.ikonice:not(:hover){
+    border-color: gray;
 }
