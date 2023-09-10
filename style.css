@@ -10,9 +10,12 @@
 
 .header{
     position: fixed;
-    max-width: 1903px;
     width: 100%;
     z-index: 1;
+}
+
+.header .container{
+    max-width: 10000px !important;
 }
 
 .ikona{
@@ -40,9 +43,9 @@
     }
 }
 
-@media (min-width: 992px){
+@media (min-width: 993px){
     .header .row{
-        --bs-gutter-x: -4.5rem;
+        padding-inline: 60px;
     }
 }
 
@@ -56,6 +59,7 @@
 @media (max-width: 767px){
     .header .row{
         gap: 20px;
+        --bs-gutter-x: 0rem;
     }
 }
 
@@ -103,6 +107,8 @@
     align-items: center;
     color: white;
     scale: 120%;
+    transition: background-color 0.7s;
+    width: 100%;
 }
 
 @media (max-width: 993px){
@@ -138,7 +144,7 @@
 
 .row button {
     color: white;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
     border: 2px solid orange;
     padding: 7px 24px 8px 24px;
     border-radius: 5px;
@@ -258,4 +264,105 @@
 
 .ikonice:not(:hover){
     border-color: gray;
+}
+
+.sivo{
+    background-color: rgba(32, 32, 32, 0.918);
+    transition: background-color 0.7s;
+}
+
+.boja1{
+    color: orange;
+}
+
+.centarl{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-right: 16.5%;
+}
+
+.vol{
+    text-align: left;
+    margin-left: 12.5%;
+    font-weight: 700;
+    padding-bottom: 10px;
+    color: rgb(73, 73, 73);
+    max-width: 646px;
+}
+
+.vol1{
+    text-align: left;
+    margin-left: 12.5%;
+    padding-bottom: 10px;
+    color: rgb(78, 78, 78);
+    max-width: 646px;
+}
+
+.vollist{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: left;
+    flex-wrap: wrap;
+    padding-left: 12%;
+}
+
+.vollist img{
+    padding-right: 20px;
+}
+
+.vollist li{
+    color: rgb(78, 78, 78);
+    max-width: 636px;
+    max-height: min-content;
+}
+
+.in{
+    display: inline-flex
+}
+
+.in img{
+    max-height: 24px;
+}
+
+.aboutimg{
+    width: min-content;
+}
+
+.aboutimg img{
+    max-height: 55%;
+    height: 400px;
+}
+
+.aboutt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.aboutall{
+    width: 40%;
+    justify-content: center;
+}
+
+@media (max-width:1400px){
+    .aboutt{
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .aboutall{
+        padding-top: 20px;
+        max-width: 100%;
+    }
+    .centarl{
+        display: none;
+    }
+    .aboutimg img{
+        height: 50%;
+        padding-left: 27.5%;
+    }
 }
