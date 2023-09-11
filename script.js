@@ -1,4 +1,4 @@
-const sivo = document.querySelector('.header .row');
+const sivo = document.querySelector('.heder');
 
 window.addEventListener('scroll', function()  {
     if (window.pageYOffset > 0){
