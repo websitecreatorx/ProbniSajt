@@ -326,15 +326,6 @@
     max-height: 24px;
 }
 
-.aboutimg{
-    width: min-content;
-}
-
-.aboutimg img{
-    max-height: 55%;
-    height: 400px;
-}
-
 .aboutt{
     display: flex;
     justify-content: center;
@@ -343,7 +334,7 @@
 }
 
 .aboutall{
-    width: 40%;
+    width: 50%;
     justify-content: center;
 }
 
@@ -356,13 +347,15 @@
     }
     .aboutall{
         padding-top: 20px;
-        max-width: 100%;
+        width: 80%;
     }
     .centarl{
         display: none;
     }
-    .aboutimg img{
-        height: 50%;
-        padding-left: 27.5%;
+}
+
+@media(max-width: 743px){
+    .vollist{
+        padding-left: 5%;
     }
 }
